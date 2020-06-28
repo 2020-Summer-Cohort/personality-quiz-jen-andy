@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./site.css"/>
+</head>
+<body>
+
+    <div id="quizContainer">
+
+        <h1>What kind of animal are you?</h1>
+
+        <button id="takeAgain" style="display: none; float: right;" onclick="window.location.reload()">Take Again</button>
+
+        <div id="quizZone">
+
+            <p>Click <strong>Start Quiz</strong> to find out!</p>
+
+            <button onclick="startQuiz()">Start Quiz</button>
+
+        </div>
+
+        <!-- Comments in HTML look like this -->
+        <div>
+
+            <!--
+                HTML comments can span multiple lines.
+                The <div> around this section^^ isn't necessary.
+                Feel free to delete it!
+                Don't forget to delete the closing tag!
+
+                The results below are hidden by CSS when the page loads.
+                When the quiz is finished, JavaScript will make the correct result visible.
+            -->
+            <div id="answer-dog" class="answer dog hide">
+                <h4>You are a dog!</h4>
+                <p>
+                    <img src="images/dog.jpg" />
+                    Pros: active, friendly, fun
+                    <br>
+                    Cons: short attention span, really want to be liked, angry when hungry
+                    </ul>
+                </p>
+            </div>
+            
+            <div id="answer-cat" class="answer cat hide">
+                <h4>You are a cat!</h4>
+                <p>
+                    <img src="images/cat.jpg" />
+                    Pros: know how to get what you want, know how to make people feel good
+                    <br>
+                    Cons: easy for your ego to get hurt, tend to be a loner, sometimes would rather scheme than just communicate about what you need
+                </p>
+            </div>
+            
+            <div id="answer-parrot" class="answer parrot hide">
+                <h4>You are a parrot!</h4>
+                <p>
+                    <img src="images/parrot.jpg" />
+                    Pros: social, well-informed, great at fitting in
+                    <br>
+                    Cons: can be vain, sometimes speaks before thinking
+                </p>
+            </div>
+            
+            <div id="answer-turtle" class="answer turtle hide">
+                <h4>You are a turtle!</h4>
+                <p>
+                    <img src="images/turtle.jpg" />
+                    Pros: good listener, resilient, dedicated and can see things through
+                    <br>
+                    Cons: slow to let people in, can be defensive
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
